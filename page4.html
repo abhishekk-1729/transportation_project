@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Transportation Engineering</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+    <style type="text/css">
+
+        body{
+            background-color: white;
+            margin: 0px;
+            padding:0px;
+            font-family: Arial, Helvetica, sans-serif;
+            color:black;
+            
+        }
+
+        .heading{
+            color:#D54773;
+            font-weight:bold ;
+            font-size: 300%;
+            text-decoration: underline;
+            left: 100px;
+            width: 500px;
+            position: relative;
+            margin:0px;
+
+        }
+
+        #t{
+            top:150px;
+        }
+
+        #ti{
+            top:160px;
+        }
+
+        
+        
+        #define{
+
+            margin: 0px;
+            height: 150px;
+            width: 500px;
+            position: relative;
+            top: 180px;
+            left: 100px;
+            text-align: justify;
+            
+        
+
+        }
+
+
+        #line1{
+            position: relative;
+            top:-210px;
+        }
+
+        img{
+            margin:0px;
+            width: 370px;
+            height: 400px;
+            border-radius: 10px;
+            position: relative;
+            right: 100px;
+            top:-10px;
+            float: right;
+        
+    }
+
+        #Data{
+            /* margin:0px; */
+            top:40px;
+
+        }
+
+        #Procedure{
+            /* margin:0px; */
+            top:40px;
+
+        }
+    
+    #tab{
+ 
+        position: relative;
+        top:0px;
+        left:190px;
+        height: 200px;
+        width: 900px;
+        /* border-color: white; */
+        font-size: 140%;
+        
+        
+    }
+ 
+    #data_input{
+
+        position: relative;
+        top: 10px;
+        padding: 40px;
+        height:190px;
+        font-size: 150%;
+        width:800px;
+        margin:auto;
+        }
+
+    #Result{
+             top:270px;
+        }
+
+        #Result_output{
+    
+        position: relative;
+        top: 280px;
+  
+        height:350px;
+        padding: 50px;
+        font-size: 150%;
+        width:700px;
+        margin:auto;
+    }
+
+    #table{
+     
+        color:black;
+        padding: 0px;
+        margin:0px;
+        position: relative;
+        top: 80px;
+        
+    }
+
+
+    .points{
+        font-family: Arial, Helvetica, sans-serif;
+            color:black;
+            font-size:170%;
+            height: 200px;
+            width: 560px;
+            /* text-align: justify; */
+            font-weight: bold;
+            position: fixed;
+            left:700px;
+    }
+
+    #compute2{
+
+        background-color: black;
+        color:white;
+        border: 2px solid white;
+        font-size: 20px;
+    }
+
+    #compute2:hover{
+        background-color:#D54773;
+    }
+
+    .ans{
+        color:#D54773;
+    }
+
+    
+    
+       
+   
+    .in{
+        width: 100px;
+    }
+
+   
+
+  
+    #intro{
+        height: 560px;
+    }
+
+ 
+    
+
+    </style>
+
+
+    
+</head>
+<body>
+
+    <div id="intro">
+    <p id="t" class = "heading">Resilient Modulus</p>
+    <p id="ti" class = "heading">Test</p>
+    <img src="Picture3_1.png" ></img>
+    <p id="define">The resilient modulus test provides a means of
+        characterizing pavement construction materials
+        including surface, base, and sub-base materials under
+        a variety of temperatures and stress states that
+        simulate the conditions in a pavement subjected to
+        moving wheel loads. The test provides an excellent means for comparing
+        the behavior of pavement construction materials under
+        a variety of conditions (i.e., moisture, density,
+        gradation, etc.) and stress states.</p>
+    
+</div>
+
+<div>
+    <p id="Procedure" class="heading"> Predure</p>
+</div>
+
+<div id="Procedure_points">
+
+<p>Indirect Tensile Strength Test</p>
+    
+    <ul class="points" >
+        <li>Indirect Tensile Strength Test</li>
+        </ul>
+    <ul class="points" >
+        <li>Marshall Stability & Flow Test</li>
+        </ul>
+    <ul class="points" >
+        <li>Resilient Modulus Test</li>
+        </ul>
+    <ul class="points" >
+        <li>Fatigue Failure of Asphalt Mixtures with the Four-Point Beam Fatigue Device</li>
+        </ul>
+    <ul class="points" >
+        <li>Creep Compilation Test</li>
+        </ul>
+</div>
+
+
+<div>
+    <p id="Data" class="heading" > Data </p>
+</div>
+
+
+
+    
+    <div id="data_input">
+        <p>Sample Diameter, D =   <input type="text" id="D2"> mm </p>
+        
+    <p >Sample Thickness, t =   <input type="text" id = "thi"> mm </p>
+
+    <p >Load, P =   <input type="text" id = "P"> N </p>
+
+    <p >Horizontal Instantaneous recovery, &Delta;HI =   <input type="text" id = "HI">  </p>
+
+    <p >Vertical Instantaneous recovery &Delta;VI =   <input type="text" id = "VI">  </p>
+
+    <p >Horizontal Total Recovery, &Delta;HT =   <input type="text" id = "HT"> </p>
+
+    <p >Vertical Total Recovery, &Delta;VT =   <input type="text" id = "VT"> </p>
+    
+
+    <button id="compute2">Calculate</button><br>
+    <br> <br>
+
+</div>
+
+
+<p id = "Result" class="heading">Result:</p>
+
+<div id="Result_output">
+        
+    <P> Instantaneous Resilient Poisson’s Ratio = <span id="ans1" class="ans">  </span></P>
+
+    <P> Total Resilient Poisson’s Ratio = <span id="ans2" class="ans"></span></P>
+    
+    <P> Instantaneous Resilient Modulus of Elasticity = <span id="ans3" class="ans"></span></P>
+
+    <P> Total Resilient Modulus of Elasticity = <span id="ans4" class="ans"></span> </P>
+
+    </div>
+
+
+    <script type = "text/javascript">
+
+        document.getElementById("compute2").onclick= function(){
+            var D = document.getElementById("D2").value;
+            var t = document.getElementById("thi").value;
+            var P = document.getElementById("P").value;
+            var HI = document.getElementById("HI").value;
+            var VI = document.getElementById("VI").value;
+            var HT = document.getElementById("HT").value;
+            var VT = document.getElementById("VT").value;
+            
+            var answer1 = (3.59*HI/VI) -0.27;
+            var answer2 = (3.59*HT/VT) -0.27;
+            var answer3 = (P*(answer1+0.27)/(t*HI))-0.27;
+            var answer4 = (P*(answer2+0.27)/(t*HT)) - 0.27;
+            
+            document.getElementById("ans1").innerHTML = answer1.toFixed(3);
+            document.getElementById("ans2").innerHTML = answer2.toFixed(3);
+            document.getElementById("ans3").innerHTML = answer3.toFixed(3);
+            document.getElementById("ans4").innerHTML = answer4.toFixed(3);
+        }
+        
+
+    </script>
+    
+</body>
+</html>

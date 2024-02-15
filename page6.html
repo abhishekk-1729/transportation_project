@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Transportation Engineering</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+    <style type="text/css">
+
+        body{
+            background-color: white;
+            margin: 0px;
+            padding:0px;
+            font-family: Arial, Helvetica, sans-serif;
+            color:black;
+            
+        }
+
+        .heading{
+            color:rgb(16, 191, 239);
+            font-weight:bold ;
+            font-size: 300%;
+            text-decoration: underline;
+            left: 100px;
+            width: 500px;
+            position: relative;
+            margin:0px;
+
+        }
+
+        #t{
+            top:150px;
+        }
+
+        #ti{
+            top:160px;
+        }
+
+        
+        
+        #define{
+
+            margin: 0px;
+            height: 150px;
+            width: 500px;
+            position: relative;
+            top: 180px;
+            left: 100px;
+            text-align: justify;
+            
+        
+
+        }
+
+
+        #line1{
+            position: relative;
+            top:-210px;
+        }
+
+        img{
+            margin:0px;
+            width: 460px;
+            height: 349px;
+            border-radius: 10px;
+            position: relative;
+            right: 100px;
+            top:-10px;
+            float: right;
+        
+    }
+
+        #Data{
+            /* margin:0px; */
+            top:40px;
+
+        }
+    
+   
+ 
+    #data_input{
+
+        position: relative;
+        top: -10px;
+        padding: 40px;
+        height:160px;
+        font-size: 150%;
+        width:800px;
+        margin:auto;
+        }
+
+    #Result{
+             top:380px;
+        }
+
+        #Result_output{
+    
+        position: relative;
+        top: 400px;
+  
+        height:350px;
+        padding: 50px;
+        font-size: 150%;
+        width:700px;
+        margin:auto;
+    }
+
+    #table{
+     
+        color:white;
+        padding: 0px;
+        margin:0px;
+        position: relative;
+        top: 80px;
+        
+    }
+
+
+
+    #compute2{
+
+        background-color: black;
+        color:white;
+        border: 2px solid white;
+        font-size: 20px;
+    }
+
+    #compute2:hover{
+        background-color:red;
+    }
+
+    .ans{
+        color:red;
+    }
+
+    
+    
+       
+    table { border-collapse: collapse;}
+    table, td, th{
+        border: 1px solid white;
+    }
+
+    .in{
+        width: 100px;
+    }
+
+   
+
+  
+    #intro{
+        height: 560px;
+    }
+
+    iframe{
+        position: relative;
+        left:80px;
+        /* margin:auto; */
+        top:100px;
+        width:90%;
+        border: 1px solid black;
+
+    }
+
+    #info{
+        position: relative;
+        left:100px;
+        top:70px;
+        width: 1000px;
+    }
+
+    @-webkit-keyframes cf4FadeInOut {
+ 0% {
+   opacity:1;
+ }
+ 17% {
+   opacity:1;
+ }
+ 25% {
+   opacity:0;
+ }
+ 92% {
+   opacity:0;
+ }
+ 100% {
+   opacity:1;
+ }
+}
+
+@-moz-keyframes cf4FadeInOut {
+ 0% {
+   opacity:1;
+ }
+ 17% {
+   opacity:1;
+ }
+ 25% {
+   opacity:0;
+ }
+ 92% {
+   opacity:0;
+ }
+ 100% {
+   opacity:1;
+ }
+}
+
+@-o-keyframes cf4FadeInOut {
+ 0% {
+   opacity:1;
+ }
+ 17% {
+   opacity:1;
+ }
+ 25% {
+   opacity:0;
+ }
+ 92% {
+   opacity:0;
+ }
+ 100% {
+   opacity:1;
+ }
+}
+
+@keyframes cf4FadeInOut {
+ 0% {
+   opacity:1;
+ }
+ 17% {
+   opacity:1;
+ }
+ 25% {
+   opacity:0;
+ }
+ 92% {
+   opacity:0;
+ }
+ 100% {
+   opacity:1;
+ }
+}
+
+#cf4a {
+             margin:0px;
+            width: 400px;
+            height: 349px;
+            border-radius: 10px;
+            position: relative;
+            right: 100px;
+            top:-10px;
+            float: right;
+}
+#cf4a img {
+  position:absolute;
+  left:0;
+}
+
+#cf4a img {
+  -webkit-animation-name: cf4FadeInOut;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-duration: 8s;
+
+  -moz-animation-name: cf4FadeInOut;
+  -moz-animation-timing-function: ease-in-out;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-duration: 8s;
+
+  -o-animation-name: cf4FadeInOut;
+  -o-animation-timing-function: ease-in-out;
+  -o-animation-iteration-count: infinite;
+  -o-animation-duration: 8s;
+
+  animation-name: cf4FadeInOut;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 8s;
+}
+#cf4a img:nth-of-type(1) {
+  -webkit-animation-delay: 6s;
+  -moz-animation-delay: 6s;
+  -o-animation-delay: 6s;
+  animation-delay: 6s;
+}
+#cf4a img:nth-of-type(2) {
+  -webkit-animation-delay: 4s;
+  -moz-animation-delay: 4s;
+  -o-animation-delay: 4s;
+  animation-delay: 4s;
+}
+#cf4a img:nth-of-type(3) {
+  -webkit-animation-delay: 2s;
+  -moz-animation-delay: 2s;
+  -o-animation-delay: 2s;
+  animation-delay: 2s;
+}
+#cf4a img:nth-of-type(4) {
+  -webkit-animation-delay: 0;
+  -moz-animation-delay: 0;
+  -o-animation-delay: 0;
+  animation-delay: 0;
+}
+    
+
+    </style>
+
+
+    
+</head>
+<body>
+
+    <div id="intro">
+    <p id="t" class = "heading">Creep Compilation</p>
+    <p id="ti" class = "heading">Test</p>
+    <div id="cf4a" class="shadow">
+        <img class="three" src="Picture6_6.jpg" />   
+        <img class="bottom" src="Picture6_5.jpg" />
+        <!-- <img class="top" src="Picture6_4.jpg" /> -->
+        <img class="three" src="Picture6_3.jpg" />   
+        <img class="bottom" src="Picture6_2.jpg" />
+        <img class="top" src="Picture6_1.jpg" />
+       
+        
+      </div>
+    <p id="define">The creep test is conducted using a tensile specimen to which a constant stress is applied, often by the simple method of suspending weights from it. Surrounding the specimen is a thermostatically controlled furnace, the temperature being controlled by a thermocouple attached to the gauge length of the specimen. The extension of the specimen is measured by a very sensitive extensometer since the actual amount of deformation before failure may be only two or three per cent. The results of the test are then plotted on a graph of strain versus time.</p>
+    
+</div>
+
+<div>
+    <p id="Data" class="heading" > Data & Calculation</p>
+</div>
+<div>
+    <p id="info">
+        Input the values of diameter, thickness, creep load, deformation, average deformation for half of total creep test time, gage length to get the values of normalized deformation arrays, trimmed mean deflection, Creep Compilation and Poisson's Ratio.
+    </p>
+</div>
+<div>
+    
+  <iframe width="750" height="320" frameborder="0" scrolling="no" src="https://onedrive.live.com/embed?resid=fb6f5b64232980cd%212433&authkey=%21AOO89cM_T-akUDU&em=2&wdAllowInteractivity=False&AllowTyping=True&Item=new&wdHideGridlines=True&wdInConfigurator=True&wdInConfigurator=True&edesNext=false&ejss=false"></iframe>
+</div>
+
+
+
+
+    
+    
+</body>
+</html>

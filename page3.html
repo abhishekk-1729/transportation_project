@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Transportation Engineering</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+    <style type="text/css">
+
+        body{
+            background-color: white;
+            margin: 0px;
+            padding:0px;
+            font-family: Arial, Helvetica, sans-serif;
+            color:black;
+            
+        }
+
+        .heading{
+            color:#5982DB;
+            font-weight:bold ;
+            font-size: 300%;
+            text-decoration: underline;
+            left: 100px;
+            width: 500px;
+            position: relative;
+            margin:0px;
+
+        }
+
+        #t{
+            top:140px;
+        }
+
+        #ti{
+            top:150px;
+        }
+
+        
+        
+        #define{
+
+            margin: 0px;
+            height: 150px;
+            width: 500px;
+            position: relative;
+            top: 170px;
+            left: 100px;
+            text-align: justify;
+            
+        
+
+        }
+
+
+        #line1{
+            position: relative;
+            top:-210px;
+        }
+
+        img{
+            margin:0px;
+            width: 400px;
+            height: 349px;
+            border-radius: 10px;
+            position: relative;
+            right: 100px;
+            top:-10px;
+            float: right;
+        
+    }
+
+        #Data{
+            /* margin:0px; */
+            top:40px;
+
+        }
+    
+    #tab{
+ 
+        position: relative;
+        top:0px;
+        left:190px;
+        height: 200px;
+        width: 900px;
+        /* border-color: white; */
+        font-size: 140%;
+        
+        
+    }
+ 
+    #data_input{
+
+        position: relative;
+        top: 120px;
+        padding: 40px;
+        height:190px;
+        font-size: 150%;
+        width:800px;
+        margin:auto;
+        }
+
+    #Result{
+             top:200px;
+        }
+
+        #Result_output{
+    
+        position: relative;
+        top: 250px;
+  
+        height:350px;
+        padding: 50px;
+        font-size: 150%;
+        width:700px;
+        margin:auto;
+    }
+
+    #table{
+     
+        color:black;
+        padding: 0px;
+        margin:0px;
+        position: relative;
+        top: 80px;
+        
+    }
+
+
+
+    #compute2{
+
+        background-color: black;
+        color:white;
+        border: 2px solid white;
+        font-size: 20px;
+    }
+
+    #compute2:hover{
+        background-color:#5982DB;
+    }
+
+    .ans{
+        color:#5982DB;
+    }
+
+    
+    
+       
+    table { border-collapse: collapse;}
+    table, td, th{
+        border: 1px solid black;
+    }
+
+    .in{
+        width: 100px;
+    }
+
+   
+
+  
+    #intro{
+        height: 560px;
+    }
+
+ 
+    @-webkit-keyframes cf4FadeInOut {
+ 0% {
+   opacity:1;
+ }
+ 17% {
+   opacity:1;
+ }
+ 25% {
+   opacity:0;
+ }
+ 92% {
+   opacity:0;
+ }
+ 100% {
+   opacity:1;
+ }
+}
+
+@-moz-keyframes cf4FadeInOut {
+ 0% {
+   opacity:1;
+ }
+ 17% {
+   opacity:1;
+ }
+ 25% {
+   opacity:0;
+ }
+ 92% {
+   opacity:0;
+ }
+ 100% {
+   opacity:1;
+ }
+}
+
+@-o-keyframes cf4FadeInOut {
+ 0% {
+   opacity:1;
+ }
+ 17% {
+   opacity:1;
+ }
+ 25% {
+   opacity:0;
+ }
+ 92% {
+   opacity:0;
+ }
+ 100% {
+   opacity:1;
+ }
+}
+
+@keyframes cf4FadeInOut {
+ 0% {
+   opacity:1;
+ }
+ 17% {
+   opacity:1;
+ }
+ 25% {
+   opacity:0;
+ }
+ 92% {
+   opacity:0;
+ }
+ 100% {
+   opacity:1;
+ }
+}
+
+#cf4a {
+             margin:0px;
+            width: 400px;
+            height: 349px;
+            border-radius: 10px;
+            position: relative;
+            right: 100px;
+            top:-10px;
+            float: right;
+}
+#cf4a img {
+  position:absolute;
+  left:0;
+}
+
+#cf4a img {
+  -webkit-animation-name: cf4FadeInOut;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-duration: 8s;
+
+  -moz-animation-name: cf4FadeInOut;
+  -moz-animation-timing-function: ease-in-out;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-duration: 8s;
+
+  -o-animation-name: cf4FadeInOut;
+  -o-animation-timing-function: ease-in-out;
+  -o-animation-iteration-count: infinite;
+  -o-animation-duration: 8s;
+
+  /* -ah-animation-name: cf4FadeInOut;
+  -ah-animation-timing-function: ease-in-out;
+  -ah-animation-iteration-count: infinite;
+  -ah-animation-duration: 8s; */
+
+  animation-name: cf4FadeInOut;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 8s;
+}
+#cf4a img:nth-of-type(1) {
+  -webkit-animation-delay: 6s;
+  -moz-animation-delay: 6s;
+  -o-animation-delay: 6s;
+  animation-delay: 6s;
+}
+#cf4a img:nth-of-type(2) {
+  -webkit-animation-delay: 4s;
+  -moz-animation-delay: 4s;
+  -o-animation-delay: 4s;
+  animation-delay: 4s;
+}
+#cf4a img:nth-of-type(3) {
+  -webkit-animation-delay: 2s;
+  -moz-animation-delay: 2s;
+  -o-animation-delay: 2s;
+  animation-delay: 2s;
+}
+#cf4a img:nth-of-type(4) {
+  -webkit-animation-delay: 0;
+  -moz-animation-delay: 0;
+  -o-animation-delay: 0;
+  animation-delay: 0;
+}
+
+
+    
+
+    </style>
+
+
+    
+</head>
+<body>
+
+    <div id="intro">
+    <p id="t" class="heading">Marshall Stability &</p>
+    <p id="ti" class="heading">Flow Test</p>
+    <div id="cf4a" class="shadow">
+        <img class="three" src="Picture2_3.jpg" />   
+        <img class="bottom" src="Picture2_2.jpg" />
+        <img class="top" src="Picture2_1.jpg" />
+       
+        
+      </div>
+    <p id="define"> The Marshall method of asphalt mix design is widely practiced in construction materials laboratories to select and proportion aggregate and asphalt materials for pavement construction. This holistic approach to asphalt pavement mix design involves the selection of mineral aggregate and binder materials, preparation of trial samples, load testing for strength and flow of materials, and lab tests of material properties. The focus is on the determination of an optimum asphalt content that will provide maximum strength to the mix with minimum deformation from axle loads.</p>
+    
+</div>
+
+<div>
+    <p id="Data" class="heading" > Data </p>
+</div>
+
+
+<div id="table">
+
+<table id="tab">
+    <tr>
+      <th>Material</th>
+      <th>Coarse Aggregate</th>
+      <th>Fine Aggregate</th>
+      <th>Filler</th>
+      <th>Bitumen</th>
+    </tr>
+    <tr>
+      <td>Weight</td>
+      <td>W1 <input type="text" id="W1" class="in"> gr</td>
+      <td>W2 <input type="text" id="W2" class="in"> gr</td>
+      <td>W3 <input type="text" id="W3" class="in"> gr</td>
+      <td>Wb <input type="text" id="Wb" class="in"> gr</td>
+    </tr>
+    <tr>
+      <td>Specific Gravity</td>
+      <td>G1 <input type="text" id="G1" class="in"></td>
+      <td>G2 <input type="text" id="G2" class="in"></td>
+      <td>G3 <input type="text" id="G3" class="in"></td>
+      <td>Gb <input type="text" id="Gb" class="in"></td>
+    </tr> 
+
+</table>
+
+</div>
+       
+<div id="data_input">
+
+    
+    <p>Weight of Sample in Air, W <sub>m</sub> =   <input type="text" id="Wm"> gm </p>
+    
+    <p >Weight of sample in Water, W <sub>w</sub> =   <input type="text" id = "Ww"> gm </p>
+    
+
+    <button id="compute2">Calculate</button><br>
+    <br> <br>
+
+</div>
+
+
+<p id = "Result" class="heading">Result:</p>
+
+<div id="Result_output">
+
+<P> Theoretical Specific Gravity, G<sub>t</sub> = <span id="ans1" class="ans">  </span> </P>
+
+<P> Bulk Specific Gravity, G<sub>m</sub>  = <span id="ans2" class="ans"></span></P>
+
+<P> Air Void, V<sub>v</sub> = <span id="ans3" class="ans"></span> % </P>
+
+<P> Volume of Bitumen, V<sub>b</sub> = <span id="ans4" class="ans"></span> cm<sup>3</sup> </P>
+
+<P> Voids in Mineral Aggregate, VMA = <span id="ans5" class="ans"></span> </P>
+
+<P> Voids filled with Bitumen , VFB= <span id="ans6" class="ans"></span> % </P>
+
+<!-- <p id="ansi"></p> -->
+
+</div>
+
+
+
+    <script type = "text/javascript">
+
+        document.getElementById("compute2").onclick= function(){
+            var W1 = document.getElementById("W1").value;
+            var W2 = document.getElementById("W2").value;
+            var W3 = document.getElementById("W3").value;
+            var Wb = document.getElementById("Wb").value;
+            var G1 = document.getElementById("G1").value;
+            var G2 = document.getElementById("G2").value;
+            var G3 = document.getElementById("G3").value;
+            var Gb = document.getElementById("Gb").value;
+            var Wm = document.getElementById("Wm").value;
+            var Ww = document.getElementById("Ww").value;
+            
+            var answer1 = (W1+W2+W3+Wb)/((W1/G1)+(W2/G2)+(W3/G3)+(Wb/Gb));
+            var answer2 = Wm/(Wm-Ww);
+            var answer3 = (answer1-answer2)*100/answer1;
+            var answer4 = (Wb/Gb)/((W1+W2+W3+Wb)/answer2);
+            var answer5 = answer3+answer4;
+            var answer6 = answer4*100/answer5;
+            
+            
+            document.getElementById("ans1").innerHTML = answer1.toFixed(3);
+            document.getElementById("ans2").innerHTML = answer2.toFixed(3);
+            document.getElementById("ans3").innerHTML = answer3.toFixed(3);
+            document.getElementById("ans4").innerHTML = answer4.toFixed(3);
+            document.getElementById("ans5").innerHTML = answer5.toFixed(3);
+            document.getElementById("ans6").innerHTML = answer6.toFixed(3);
+        }
+        
+
+    </script>
+    
+</body>
+</html>

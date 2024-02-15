@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Transportation Engineering</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+    <style type="text/css">
+
+        body{
+            background-color: white;
+            margin: 0px;
+            padding:0px;
+            font-family: Arial, Helvetica, sans-serif;
+            color:black;
+            
+        }
+
+        .heading{
+            color:red;
+            font-weight:bold ;
+            font-size: 300%;
+            text-decoration: underline;
+            left: 100px;
+            width: 600px;
+            position: relative;
+            margin:0px;
+
+        }
+
+        #t{
+            top:120px;
+        }
+
+        #ti{
+            top:130px;
+        }
+
+        
+        
+        #define{
+
+            margin: 0px;
+            height: 150px;
+            width: 500px;
+            position: relative;
+            top: 150px;
+            left: 100px;
+            text-align: justify;
+            
+        
+
+        }
+
+
+        #line1{
+            position: relative;
+            top:-210px;
+        }
+
+        img{
+            margin:0px;
+            width: 400px;
+            height: 349px;
+            border-radius: 10px;
+            position: relative;
+            right: 100px;
+            top:-80px;
+            float: right;
+        
+    }
+
+        #Data{
+            /* margin:0px; */
+            top:40px;
+
+        }
+    
+   
+ 
+    #data_input{
+
+        position: relative;
+        top: -10px;
+        padding: 40px;
+        height:160px;
+        font-size: 150%;
+        width:800px;
+        margin:auto;
+        }
+
+    #Result{
+             top:380px;
+        }
+
+        #Result_output{
+    
+        position: relative;
+        top: 400px;
+  
+        height:350px;
+        padding: 50px;
+        font-size: 150%;
+        width:700px;
+        margin:auto;
+    }
+
+    #table{
+     
+        color:white;
+        padding: 0px;
+        margin:0px;
+        position: relative;
+        top: 80px;
+        
+    }
+
+
+
+    #compute2{
+
+        background-color: black;
+        color:white;
+        border: 2px solid white;
+        font-size: 20px;
+    }
+
+    #compute2:hover{
+        background-color:red;
+    }
+
+    .ans{
+        color:red;
+    }
+
+    
+    
+       
+    table { border-collapse: collapse;}
+    table, td, th{
+        border: 1px solid black;
+    }
+
+    .in{
+        width: 100px;
+    }
+
+   
+
+  
+    #intro{
+        height: 560px;
+    }
+
+ 
+    @-webkit-keyframes cf4FadeInOut {
+ 0% {
+   opacity:1;
+ }
+ 17% {
+   opacity:1;
+ }
+ 25% {
+   opacity:0;
+ }
+ 92% {
+   opacity:0;
+ }
+ 100% {
+   opacity:1;
+ }
+}
+
+@-moz-keyframes cf4FadeInOut {
+ 0% {
+   opacity:1;
+ }
+ 17% {
+   opacity:1;
+ }
+ 25% {
+   opacity:0;
+ }
+ 92% {
+   opacity:0;
+ }
+ 100% {
+   opacity:1;
+ }
+}
+
+@-o-keyframes cf4FadeInOut {
+ 0% {
+   opacity:1;
+ }
+ 17% {
+   opacity:1;
+ }
+ 25% {
+   opacity:0;
+ }
+ 92% {
+   opacity:0;
+ }
+ 100% {
+   opacity:1;
+ }
+}
+
+@keyframes cf4FadeInOut {
+ 0% {
+   opacity:1;
+ }
+ 17% {
+   opacity:1;
+ }
+ 25% {
+   opacity:0;
+ }
+ 92% {
+   opacity:0;
+ }
+ 100% {
+   opacity:1;
+ }
+}
+
+#cf4a {
+             margin:0px;
+            width: 400px;
+            height: 349px;
+            border-radius: 10px;
+            position: relative;
+            right: 100px;
+            top:-10px;
+            float: right;
+}
+#cf4a img {
+  position:absolute;
+  left:0;
+}
+
+#cf4a img {
+  -webkit-animation-name: cf4FadeInOut;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-duration: 8s;
+
+  -moz-animation-name: cf4FadeInOut;
+  -moz-animation-timing-function: ease-in-out;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-duration: 8s;
+
+  -o-animation-name: cf4FadeInOut;
+  -o-animation-timing-function: ease-in-out;
+  -o-animation-iteration-count: infinite;
+  -o-animation-duration: 8s;
+
+  /* -ah-animation-name: cf4FadeInOut;
+  -ah-animation-timing-function: ease-in-out;
+  -ah-animation-iteration-count: infinite;
+  -ah-animation-duration: 8s; */
+
+  animation-name: cf4FadeInOut;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 8s;
+}
+#cf4a img:nth-of-type(1) {
+  -webkit-animation-delay: 6s;
+  -moz-animation-delay: 6s;
+  -o-animation-delay: 6s;
+  animation-delay: 6s;
+}
+#cf4a img:nth-of-type(2) {
+  -webkit-animation-delay: 4s;
+  -moz-animation-delay: 4s;
+  -o-animation-delay: 4s;
+  animation-delay: 4s;
+}
+#cf4a img:nth-of-type(3) {
+  -webkit-animation-delay: 2s;
+  -moz-animation-delay: 2s;
+  -o-animation-delay: 2s;
+  animation-delay: 2s;
+}
+#cf4a img:nth-of-type(4) {
+  -webkit-animation-delay: 0;
+  -moz-animation-delay: 0;
+  -o-animation-delay: 0;
+  animation-delay: 0;
+}
+
+
+    
+
+
+    </style>
+
+
+    
+</head>
+<body>
+
+    <div id="intro">
+    <p id="t" class = "heading">Fatigue Failure Of Asphalt</p>
+    <p id="ti" class = "heading"> Mixtures with the Four-Point Beam Fatigue Device</p>
+    <p id="ti" class = "heading"></p>
+    <div id="cf4a" class="shadow">
+        <!-- <img class="three" src="Picture4_5.jpg" />    -->
+        <img class="bottom" src="Picture4_5.jpg" />
+        <img class="top" src="Picture4_4.jpg" />
+        <img class="three" src="Picture4_3.jpg" />   
+        <img class="bottom" src="Picture4_2.jpg" />
+        <img class="top" src="Picture4_1.jpg" />
+       
+        
+      </div>
+    <p id="define">This test method provides a procedure for determining a fatigue curve that is developed using three or more strain levels. The resulting data can be used in the fatigue models for mechanistic-empirical pavement design (that is, Pavement ME). Failure points are determined for estimating the fatigue life of 380 mm long by 50 mm thick by 63 mm in breadth (width) asphalt mixture beam (rectangular prism) specimens sawed from laboratory or field-compacted asphalt mixture, which are subjected to repeated flexural bending.</p>
+    
+</div>
+
+<div>
+    <p id="Data" class="heading" > Data </p>
+</div>
+
+
+
+       
+
+
+    
+    <div id="data_input">
+        <p>Peak-Peak load Applied on Beams, P =   <input type="text" id="P"> N </p>
+        
+        <p >Sample Length, L =   <input type="text" id = "L"> mm </p>
+
+        <p >Sample Width, b =   <input type="text" id = "b"> mm </p>
+    
+        <p >Sample Height, h =   <input type="text" id = "h"> mm  </p>
+    
+        <p >C/C distance of Clamps, a =   <input type="text" id = "a"> mm </p>
+    
+        <p >N0 =   <input type="text" id = "N0"> </p>
+    
+        <p >Ni =  <input type="text" id = "Ni"> </p>
+    
+        <p >S0 =   <input type="text" id = "S0"> </p>
+    
+        <p >Si =  <input type="text" id = "Si"> </p>
+
+    <button id="compute2">Calculate</button><br>
+    <br> <br>
+
+</div>
+
+
+<p id = "Result" class="heading">Result:</p>
+
+<div id="Result_output">
+        
+    <P> Peak-to-Peak stress on Beam, &sigma;<sub>p-p</sub> = <span id="ans1" class="ans">  </span> kPa</P>
+
+    <P> Maximum Tensile Stress, &sigma; = <span id="ans2" class="ans"></span> kPa</P>
+    
+    <P> Peak to Peak Strain, &epsilon;<sub>p-p</sub> = <span id="ans3" class="ans"></span> &micro;&epsilon;</P>
+    
+    <P> Maximum Tensile Strain, &epsilon; = <span id="ans4" class="ans"></span> &micro;&epsilon; </P>
+    
+    <P> Flexural Beam Stiffness, S = <span id="ans5" class="ans"></span> MPa</P>
+    
+    <P> Normalized Stiffness x Normalized Cycle, S x N = <span id="ans6" class="ans"></span> </P>
+
+    </div>
+
+
+    <script type = "text/javascript">
+
+        document.getElementById("compute2").onclick= function(){
+            var L = document.getElementById("L").value;
+            var b = document.getElementById("b").value;
+            var h = document.getElementById("h").value;
+            var a = document.getElementById("a").value;
+            var N0 = document.getElementById("N0").value;
+            var Ni = document.getElementById("Ni").value;
+            var S0 = document.getElementById("S0").value;
+            var Si = document.getElementById("Si").value;
+            var P = document.getElementById("P").value;
+            
+            var answer1 = 3*a*P*1000/(b*h*h);
+            var answer2 = answer1/2;
+            var answer3 = 12*answer1*h/((3*L*L)-(4*a*a));
+            var answer4 = answer3/2;
+            var answer5 = answer1*10000/answer4;
+            var answer6 = Si*Ni/(S0*N0);
+            
+            document.getElementById("ans1").innerHTML = answer1.toFixed(3);
+            document.getElementById("ans2").innerHTML = answer2.toFixed(3);
+            document.getElementById("ans3").innerHTML = answer3.toFixed(3);
+            document.getElementById("ans4").innerHTML = answer4.toFixed(3);
+            document.getElementById("ans5").innerHTML = answer4.toFixed(3);
+            document.getElementById("ans6").innerHTML = answer4.toFixed(3);
+        }
+        
+
+    </script>
+    
+</body>
+</html>
